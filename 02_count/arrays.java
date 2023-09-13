@@ -30,18 +30,16 @@ const newArr = myArr.join()  //convert in string
 //only differnce is that in splice the changes made are reflected in the original array
 
 
-console.log("A",myArr);
+// console.log("A",myArr);
 
-const myn1 = myArr.slice(1,3)
+// const myn1 = myArr.slice(1,3)
 
-console.log(myn1);
-console.log("A",myArr);//no changes after slicing
+// console.log(myn1);
+// console.log("A",myArr);//no changes after slicing
 
-const myn2 = myArr.splice(1,3)
-console.log(myn2);
-console.log("A",myArr);
-
-
+// const myn2 = myArr.splice(1,3)
+// console.log(myn2);
+// console.log("A",myArr);
 
 
 
