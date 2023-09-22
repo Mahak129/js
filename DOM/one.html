@@ -4,12 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        body
+        {
+           background-color: black; 
+           color:#fff
+        }
+    </style>
 </head>
 <body>
     <div class="bg-black">
-        <h1 id="iddemoclass="heading">DOM learinig on chai and code</h1>
+        <h1 id="iddemo" class="heading">DOM learinig on chai and code <span style="display:none;"> demo context</span></h1>
        <p>Lorem ipsum dolor sit amet.</p>
     </div>
     
 </body>
 </html>
+
+
+<!-- //Dom -->
+<!-- document.getElementById('iddemo')
+<h1 id=​"iddemo" class=​"heading">​DOM learinig on chai and code​</h1>​
+document.getElementById('iddemo').id
+'iddemo'
+document.getElementById('iddemo').class
+undefined
+document.getElementById('iddemo').className
+'heading' -->
+
+<!-- //can select Attributes
+
+//will return value of the attribute -->
+<!-- document.getElementById('iddemo').getAttribute('id')
+'iddemo'
+document.getElementById('iddemo').getAttribute('class')
+'heading -->
+
+<!-- //not only this but we can set attribute -->
+<!-- document.getElementById('iddemo').setAttribute('class','demo2')
+undefined                old class name         kisko chnage krna hai,new class name
+  -->
+
+
+  <!-- styling the document page
+
+  const title=document.getElementById('iddemo')
+undefined
+title.style.backgroundColor = 'green'
+'green' -->
+
+<!-- 
+title
+<h1 id=​"iddemo" class=​"heading" style=​"background-color:​ green;​">​DOM learinig on chai and code​</h1>​
+title.textContent
+'DOM learinig on chai and code'
+title.innerHTML
+'DOM learinig on chai and code'
+title.innerText
+'DOM learinig on chai and code' -->
+<!-- inner text only shows code which is visible
+inner HTml shows the code which is written inside html tag inside a tag
+
+inner textContent show text which is not visible + which is visible -->
+
+
+
+<!-- when we pass className we get in return HTMLCOllection -->
+
+<!-- //querySelctor -->
+<!-- this will only return one element -->
+<!-- document.querySelector('h2')
+
+document.querySelector('#title')
+
+document.querySelector(.heading) -->
+
+<!-- 
+document.querySelctorAll('li')
+
+ it returns a nodeList -->
+
+ <!-- individually  we have to style the element
+ tempList[0].style.color ='green' -->
+
+<!-- 
+ //converting nodlist into Array -->
+<!-- //also Query Selector by class name return HTMLCollection -->
+Array.from(nameofList)
+
