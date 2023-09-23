@@ -27,12 +27,36 @@
 
 
     //optimized way of writing a function
-
+//no need to travesre the full tree 
     function addOptimizationLanguage(langName){
         const li = document.createElement('li')
         li.appendChild(document.createTextNode(langName))
         document.querySelector('.language').appendChild(li)
     }
     addOptimizationLanguage('golang')
+
+    //edit the element
+
+
+    const langugeSelcor =document.querySelector("li:nth-child(2)")
+// console.log(langugeSelcor)
+    // langugeSelcor.innerHTML = "MOjo"
+//not optimized
+
+//optimised
+
+const newli = document.createElement('li')
+newli.textContent = "mojo"
+langugeSelcor.replaceWith(newli)
+
+//third way
+const firstLang = document.querySelector("li:first-child")
+firstLang.outerHTML = '<li>TYPESCRIPT</li>'
+
+
+//remove 
+
+const lastlanguge = document.querySelector('li:last-child')
+lastlanguge.remove()
 </script>
 </html>
